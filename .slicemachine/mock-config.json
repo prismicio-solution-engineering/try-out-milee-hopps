@@ -452,6 +452,11 @@
           }
         }
       }
+    },
+    "ContentSectionImage": {
+      "default": {
+        "primary": {}
+      }
     }
   },
   "slices/custom": {

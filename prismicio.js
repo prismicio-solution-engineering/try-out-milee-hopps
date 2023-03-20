@@ -18,6 +18,10 @@ const routes = [
         type: 'landing_page',
         path: '/:uid',
     },
+    {
+        type: 'page',
+        path: '/pages/:uid',
+    },
 ]
 
 /**

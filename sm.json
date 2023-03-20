@@ -1,5 +1,5 @@
 {
-  "apiEndpoint": "https://se-poc.cdn.prismic.io/api/v2",
+  "apiEndpoint": "https://try-out-milee-hopps.prismic.io/api/v2",
   "libraries": [
     "@/slices/default",
     "@/slices/custom"

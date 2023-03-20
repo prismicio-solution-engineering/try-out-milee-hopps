@@ -373,7 +373,36 @@ type MenuDocumentDataSlicesSlice = MenuSlice;
  * @typeParam Lang - Language API ID of the document.
  */
 export type MenuDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<MenuDocumentData>, "menu", Lang>;
-export type AllDocumentTypes = FooterDocument | HomepageDocument | LandingPageDocument | MenuDocument;
+/** Content for Page documents */
+interface PageDocumentData {
+    /**
+     * Slice Zone field in *Page*
+     *
+     * - **Field Type**: Slice Zone
+     * - **Placeholder**: *None*
+     * - **API ID Path**: page.slices[]
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/slices
+     *
+     */
+    slices: prismicT.SliceZone<PageDocumentDataSlicesSlice>;
+}
+/**
+ * Slice for *Page → Slice Zone*
+ *
+ */
+type PageDocumentDataSlicesSlice = ContentSectionImageSlice;
+/**
+ * Page document from Prismic
+ *
+ * - **API ID**: `page`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type PageDocument<Lang extends string = string> = prismicT.PrismicDocumentWithUID<Simplify<PageDocumentData>, "page", Lang>;
+export type AllDocumentTypes = FooterDocument | HomepageDocument | LandingPageDocument | MenuDocument | PageDocument;
 /**
  * Primary content in Accordion → Primary
  *
@@ -439,6 +468,70 @@ type AccordionSliceVariation = AccordionSliceDefault;
  *
  */
 export type AccordionSlice = prismicT.SharedSlice<"accordion", AccordionSliceVariation>;
+/**
+ * Primary content in ContentSectionImage → Primary
+ *
+ */
+interface ContentSectionImageSliceDefaultPrimary {
+    /**
+     * image field in *ContentSectionImage → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: content_section_image.primary.image
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    image: prismicT.ImageField<never>;
+}
+/**
+ * Default variation for ContentSectionImage Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `ContentSectionImage`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type ContentSectionImageSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<ContentSectionImageSliceDefaultPrimary>, never>;
+/**
+ * Primary content in ContentSectionImage → Primary
+ *
+ */
+interface ContentSectionImageSliceWithResponsiveViewsPrimary {
+    /**
+     * image field in *ContentSectionImage → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: content_section_image.primary.image
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    image: prismicT.ImageField<"mobile">;
+}
+/**
+ * With Responsive Views variation for ContentSectionImage Slice
+ *
+ * - **API ID**: `withResponsiveViews`
+ * - **Description**: `ContentSectionImage`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type ContentSectionImageSliceWithResponsiveViews = prismicT.SharedSliceVariation<"withResponsiveViews", Simplify<ContentSectionImageSliceWithResponsiveViewsPrimary>, never>;
+/**
+ * Slice variation for *ContentSectionImage*
+ *
+ */
+type ContentSectionImageSliceVariation = ContentSectionImageSliceDefault | ContentSectionImageSliceWithResponsiveViews;
+/**
+ * ContentSectionImage Shared Slice
+ *
+ * - **API ID**: `content_section_image`
+ * - **Description**: `ContentSectionImage`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type ContentSectionImageSlice = prismicT.SharedSlice<"content_section_image", ContentSectionImageSliceVariation>;
 /**
  * Primary content in Features → Primary
  *
@@ -1097,6 +1190,6 @@ declare module "@prismicio/client" {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { FooterDocumentData, FooterDocumentDataInternalLinksItem, FooterDocumentDataSocialLinksItem, FooterDocument, HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocumentDataSocialCardsItem, HomepageDocument, LandingPageDocumentData, LandingPageDocumentDataSlicesSlice, LandingPageDocumentDataSocialCardsItem, LandingPageDocument, MenuDocumentData, MenuDocumentDataSlicesSlice, MenuDocument, AllDocumentTypes, AccordionSliceDefaultPrimary, AccordionSliceDefaultItem, AccordionSliceDefault, AccordionSliceVariation, AccordionSlice, FeaturesSliceDefaultPrimary, FeaturesSliceDefaultItem, FeaturesSliceDefault, FeaturesSliceWithImagePrimary, FeaturesSliceWithImageItem, FeaturesSliceWithImage, FeaturesSliceVariation, FeaturesSlice, HeroBannerSliceDefaultPrimary, HeroBannerSliceDefaultItem, HeroBannerSliceDefault, HeroBannerSliceWithoutCtaPrimary, HeroBannerSliceWithoutCta, HeroBannerSliceWithSignUpAndMediaPrimary, HeroBannerSliceWithSignUpAndMedia, HeroBannerSliceVariation, HeroBannerSlice, MenuSliceDefaultPrimary, MenuSliceDefault, MenuSliceDropdownPrimary, MenuSliceDropdownItem, MenuSliceDropdown, MenuSliceVariation, MenuSlice, SocialFeedFlickrSliceDefaultPrimary, SocialFeedFlickrSliceDefault, SocialFeedFlickrSliceVariation, SocialFeedFlickrSlice };
+        export type { FooterDocumentData, FooterDocumentDataInternalLinksItem, FooterDocumentDataSocialLinksItem, FooterDocument, HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocumentDataSocialCardsItem, HomepageDocument, LandingPageDocumentData, LandingPageDocumentDataSlicesSlice, LandingPageDocumentDataSocialCardsItem, LandingPageDocument, MenuDocumentData, MenuDocumentDataSlicesSlice, MenuDocument, PageDocumentData, PageDocumentDataSlicesSlice, PageDocument, AllDocumentTypes, AccordionSliceDefaultPrimary, AccordionSliceDefaultItem, AccordionSliceDefault, AccordionSliceVariation, AccordionSlice, ContentSectionImageSliceDefaultPrimary, ContentSectionImageSliceDefault, ContentSectionImageSliceWithResponsiveViewsPrimary, ContentSectionImageSliceWithResponsiveViews, ContentSectionImageSliceVariation, ContentSectionImageSlice, FeaturesSliceDefaultPrimary, FeaturesSliceDefaultItem, FeaturesSliceDefault, FeaturesSliceWithImagePrimary, FeaturesSliceWithImageItem, FeaturesSliceWithImage, FeaturesSliceVariation, FeaturesSlice, HeroBannerSliceDefaultPrimary, HeroBannerSliceDefaultItem, HeroBannerSliceDefault, HeroBannerSliceWithoutCtaPrimary, HeroBannerSliceWithoutCta, HeroBannerSliceWithSignUpAndMediaPrimary, HeroBannerSliceWithSignUpAndMedia, HeroBannerSliceVariation, HeroBannerSlice, MenuSliceDefaultPrimary, MenuSliceDefault, MenuSliceDropdownPrimary, MenuSliceDropdownItem, MenuSliceDropdown, MenuSliceVariation, MenuSlice, SocialFeedFlickrSliceDefaultPrimary, SocialFeedFlickrSliceDefault, SocialFeedFlickrSliceVariation, SocialFeedFlickrSlice };
     }
 }
