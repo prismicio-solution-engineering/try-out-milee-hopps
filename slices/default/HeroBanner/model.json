@@ -1,0 +1,229 @@
+{
+  "id": "hero_banner",
+  "type": "SharedSlice",
+  "name": "HeroBanner",
+  "description": "HeroBanner",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "HeroBanner",
+      "primary": {
+        "title_top_line": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title Top line",
+            "placeholder": "Top line content",
+            "allowTargetBlank": true,
+            "single": "heading1"
+          }
+        },
+        "title_bottom_line": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title Bottom Line",
+            "placeholder": "Bottom line content",
+            "allowTargetBlank": true,
+            "single": "heading1"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "Section description",
+            "allowTargetBlank": true,
+            "single": "paragraph,strong,em,hyperlink"
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {
+              "width": 640,
+              "height": 554
+            },
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {
+        "cta_label": {
+          "type": "Text",
+          "config": {
+            "label": "Cta Label",
+            "placeholder": "Link label"
+          }
+        },
+        "cta_link": {
+          "type": "Link",
+          "config": {
+            "label": "Cta Link",
+            "placeholder": "Link URL",
+            "allowTargetBlank": false,
+            "select": null
+          }
+        },
+        "cta_type": {
+          "type": "Select",
+          "config": {
+            "label": "Cta Type",
+            "placeholder": "Select button type",
+            "options": [
+              "Primary",
+              "Secondary"
+            ],
+            "default_value": "Primary"
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    },
+    {
+      "id": "withoutCta",
+      "name": "Without Cta",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "HeroBanner",
+      "primary": {
+        "title_top_line": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title Top line",
+            "placeholder": "Top line content",
+            "allowTargetBlank": true,
+            "single": "heading1"
+          }
+        },
+        "title_bottom_line": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title Bottom Line",
+            "placeholder": "Bottom line content",
+            "allowTargetBlank": true,
+            "single": "heading1"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "Section description",
+            "allowTargetBlank": true,
+            "single": "paragraph,strong,em,hyperlink"
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {
+              "width": 640,
+              "height": 554
+            },
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    },
+    {
+      "id": "withSignUpAndMedia",
+      "name": "With sign up and media",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "HeroBanner",
+      "primary": {
+        "form_top_message": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Form top message",
+            "placeholder": "Short message",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          }
+        },
+        "title_top_line": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title Top line",
+            "placeholder": "Top line content",
+            "allowTargetBlank": true,
+            "single": "heading1"
+          }
+        },
+        "title_bottom_line": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title Bottom Line",
+            "placeholder": "Bottom line content",
+            "allowTargetBlank": true,
+            "single": "heading1"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "Section description",
+            "allowTargetBlank": true,
+            "single": "paragraph,strong,em,hyperlink"
+          }
+        },
+        "form_label": {
+          "type": "Text",
+          "config": {
+            "label": "Form Label",
+            "placeholder": "Form label, not displayed"
+          }
+        },
+        "form_placeholder": {
+          "type": "Text",
+          "config": {
+            "label": "Form placeholder",
+            "placeholder": "Email field placeholder"
+          }
+        },
+        "form_cta_label": {
+          "type": "Text",
+          "config": {
+            "label": "Form Cta Label",
+            "placeholder": "Link label"
+          }
+        },
+        "media_thumbnail": {
+          "type": "Image",
+          "config": {
+            "label": "Media Thumbnail",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "show_play_video_button": {
+          "type": "Boolean",
+          "config": {
+            "label": "Show play video button",
+            "placeholder_false": "Hide",
+            "placeholder_true": "Show",
+            "default_value": true
+          }
+        },
+        "privacy_message": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Privacy message",
+            "placeholder": "Privacy message",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item,rtl"
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

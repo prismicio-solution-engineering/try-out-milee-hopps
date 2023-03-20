@@ -1,0 +1,15 @@
+import MyComponent from '../../../../../slices/default/HeroBanner';
+
+export default {
+  title: 'slices/default/HeroBanner'
+}
+
+
+export const _Default = () => <MyComponent slice={{"variation":"default","version":"sktwi1xtmkfgx8626","items":[{"cta_label":"situation","cta_link":{"link_type":"Web","url":"http://twitter.com"},"cta_type":"Secondary"}],"primary":{"title_top_line":[{"type":"heading1","text":"Captain","spans":[]}],"title_bottom_line":[{"type":"heading1","text":"Studied","spans":[]}],"description":[{"type":"paragraph","text":"Sunt nulla officia incididunt cillum quis aliqua ea ipsum sit aliqua laboris consequat sunt. Elit enim laboris magna ex quis proident qui ad. Sit laborum in dolore ex quis dolore esse commodo sint mollit anim nostrud.","spans":[]}],"image":{"dimensions":{"width":640,"height":554},"alt":null,"copyright":null,"url":"https://images.unsplash.com/photo-1587840171670-8b850147754e"}},"slice_type":"hero_banner","id":"_Default"}} />
+_Default.storyName = ''
+
+export const _WithoutCta = () => <MyComponent slice={{"variation":"withoutCta","version":"sktwi1xtmkfgx8626","items":[{}],"primary":{"title_top_line":[{"type":"heading1","text":"Clock","spans":[]}],"title_bottom_line":[{"type":"heading1","text":"Whatever","spans":[]}],"description":[{"type":"paragraph","text":"Consequat et consectetur magna laborum occaecat culpa quis. Non ad Lorem voluptate nisi sint irure cillum id consequat fugiat enim esse mollit voluptate.","spans":[]}],"image":{"dimensions":{"width":640,"height":554},"alt":null,"copyright":null,"url":"https://images.unsplash.com/photo-1587840171670-8b850147754e"}},"slice_type":"hero_banner","id":"_WithoutCta"}} />
+_WithoutCta.storyName = ''
+
+export const _WithSignUpAndMedia = () => <MyComponent slice={{"variation":"withSignUpAndMedia","version":"sktwi1xtmkfgx8626","items":[{}],"primary":{"form_top_message":[{"type":"paragraph","text":"Est nulla cupidatat cillum reprehenderit tempor tempor amet aute nisi ea irure. Duis enim esse sint nostrud enim sint cillum est proident nulla.","spans":[]}],"title_top_line":[{"type":"heading1","text":"Clothes","spans":[]}],"title_bottom_line":[{"type":"heading1","text":"Powder","spans":[]}],"description":[{"type":"paragraph","text":"Magna sint voluptate officia enim minim. Dolor cillum eu aute eu quis sit magna pariatur ipsum. Excepteur duis minim consequat pariatur occaecat magna quis id ex sunt voluptate consectetur deserunt.","spans":[]}],"form_label":"island","form_placeholder":"sort","form_cta_label":"lost","media_thumbnail":{"dimensions":{"width":900,"height":500},"alt":null,"copyright":null,"url":"https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72"},"show_play_video_button":true,"privacy_message":[{"type":"paragraph","text":"Do exercitation aliqua tempor aute enim.","spans":[]}]},"slice_type":"hero_banner","id":"_WithSignUpAndMedia"}} />
+_WithSignUpAndMedia.storyName = ''

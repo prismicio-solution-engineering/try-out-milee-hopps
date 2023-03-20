@@ -1,0 +1,85 @@
+{
+  "id": "menu",
+  "type": "SharedSlice",
+  "name": "MenuItem",
+  "description": "Menu",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Menu",
+      "primary": {
+        "label": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Label",
+            "placeholder": "Label",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          }
+        },
+        "link": {
+          "type": "Link",
+          "config": {
+            "label": "Link",
+            "placeholder": "Link",
+            "allowTargetBlank": false,
+            "select": null
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    },
+    {
+      "id": "dropdown",
+      "name": "Dropdown",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Menu",
+      "primary": {
+        "label": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Dropdown label",
+            "placeholder": "First level label",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          }
+        }
+      },
+      "items": {
+        "second_level_link": {
+          "type": "Link",
+          "config": {
+            "label": "Second level link",
+            "placeholder": "Second level link",
+            "allowTargetBlank": false,
+            "select": null
+          }
+        },
+        "second_level_label": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Second level label",
+            "placeholder": "Second level label",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          }
+        },
+        "second_level_description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Second level description",
+            "placeholder": "Second level description paragraph",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

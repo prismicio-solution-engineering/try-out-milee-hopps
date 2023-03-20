@@ -1,0 +1,12 @@
+import MyComponent from '../../../../../slices/default/Features';
+
+export default {
+  title: 'slices/default/Features'
+}
+
+
+export const _Default = () => <MyComponent slice={{"variation":"default","version":"sktwi1xtmkfgx8626","items":[{"feature_title":[{"type":"paragraph","text":"Velit nisi ut nisi esse sint do dolor non.","spans":[]}],"feature_description":[{"type":"paragraph","text":"Reprehenderit laborum fugiat eiusmod ipsum dolor sint in occaecat et nulla voluptate sit. Id commodo sint ut non officia.","spans":[]}],"feature_icon":{"dimensions":{"width":32,"height":32},"alt":null,"copyright":null,"url":"https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea"}}],"primary":{"title":[{"type":"heading2","text":"Heart","spans":[]}],"description":[{"type":"paragraph","text":"Dolore duis fugiat consequat anim nostrud labore aute minim incididunt cupidatat irure minim labore. Exercitation nulla nostrud fugiat do qui incididunt excepteur labore.","spans":[]}]},"slice_type":"features","id":"_Default"}} />
+_Default.storyName = ''
+
+export const _WithImage = () => <MyComponent slice={{"variation":"withImage","version":"sktwi1xtmkfgx8626","items":[{"feature_title":[{"type":"paragraph","text":"Minim anim aliquip ullamco adipisicing duis ad et Lorem Lorem esse. Ipsum officia Lorem occaecat non esse magna elit exercitation.","spans":[]}],"feature_description":[{"type":"paragraph","text":"Ut officia esse dolore laboris. Sit laboris irure irure ut ad ea incididunt.","spans":[]}],"feature_icon":{"dimensions":{"width":32,"height":32},"alt":null,"copyright":null,"url":"https://images.unsplash.com/photo-1547082299-de196ea013d6"}}],"primary":{"title":[{"type":"heading2","text":"Anyone","spans":[]}],"description":[{"type":"paragraph","text":"Cupidatat aliquip eiusmod tempor officia consequat quis laborum Lorem tempor proident dolore ullamco sit. Ipsum laboris ad pariatur ullamco pariatur deserunt incididunt ex labore veniam. Ea elit pariatur et pariatur.","spans":[]}],"section_title":[{"type":"heading3","text":"History","spans":[]}],"section_description":[{"type":"paragraph","text":"Nulla enim et ullamco deserunt in sunt deserunt minim officia magna magna id.","spans":[]}],"section_image":{"dimensions":{"width":490,"height":500},"alt":null,"copyright":null,"url":"https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea"},"image_position":true},"slice_type":"features","id":"_WithImage"}} />
+_WithImage.storyName = ''

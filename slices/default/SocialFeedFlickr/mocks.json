@@ -1,0 +1,42 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "title": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading2",
+            "content": {
+              "text": "Whose"
+            }
+          }
+        ]
+      },
+      "social_link_label": {
+        "__TYPE__": "FieldContent",
+        "value": "telephone",
+        "type": "Text"
+      },
+      "social_link_url": {
+        "__TYPE__": "LinkContent",
+        "value": {
+          "__TYPE__": "ExternalLink",
+          "url": "https://slicemachine.dev"
+        }
+      },
+      "number_of_posts": {
+        "__TYPE__": "FieldContent",
+        "value": "26",
+        "type": "Number"
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": []
+      }
+    ]
+  }
+]

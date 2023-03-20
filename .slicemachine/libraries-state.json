@@ -1,0 +1,1076 @@
+{
+  "slices/default": {
+    "components": {
+      "accordion": {
+        "library": "slices/default",
+        "id": "accordion",
+        "name": "Accordion",
+        "description": "Accordion",
+        "model": {
+          "id": "accordion",
+          "type": "SharedSlice",
+          "name": "Accordion",
+          "description": "Accordion",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Accordion",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Section title",
+                    "allowTargetBlank": true,
+                    "single": "heading2"
+                  }
+                }
+              },
+              "items": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "First level label",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,strong,em"
+                  }
+                },
+                "content": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Content",
+                    "placeholder": "Content",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,strong,em,hyperlink"
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "title": [
+                  {
+                    "type": "paragraph",
+                    "text": "Non Lorem commodo non dolor est ipsum qui enim. Nisi elit duis veniam enim ex cupidatat aliquip fugiat do velit consectetur.",
+                    "spans": []
+                  }
+                ],
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "text": "Quis non eiusmod mollit sit aliquip ullamco nulla consequat pariatur.",
+                    "spans": []
+                  }
+                ]
+              }
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading2",
+                  "text": "Young",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "accordion"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/dianka/Documents/POC/poc-playground/slices/default/Accordion/default/preview.png",
+            "width": 2554,
+            "height": 1204
+          }
+        }
+      },
+      "features": {
+        "library": "slices/default",
+        "id": "features",
+        "name": "Features",
+        "description": "Features",
+        "model": {
+          "id": "features",
+          "type": "SharedSlice",
+          "name": "Features",
+          "description": "Features",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Features",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Section title",
+                    "allowTargetBlank": true,
+                    "single": "heading2"
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "Section description",
+                    "allowTargetBlank": true,
+                    "single": "paragraph"
+                  }
+                }
+              },
+              "items": {
+                "feature_title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Feature Title",
+                    "placeholder": "Item title",
+                    "allowTargetBlank": true,
+                    "single": "paragraph"
+                  }
+                },
+                "feature_description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Feature Description",
+                    "placeholder": "Item description",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,preformatted,strong,em,hyperlink,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "feature_icon": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Feature Icon Image",
+                    "constraint": {
+                      "width": 32,
+                      "height": 32
+                    },
+                    "thumbnails": []
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            },
+            {
+              "id": "withImage",
+              "name": "With image",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Features",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Section title",
+                    "allowTargetBlank": true,
+                    "single": "heading2"
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "Section description",
+                    "allowTargetBlank": true,
+                    "single": "paragraph"
+                  }
+                },
+                "section_title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Section Title",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "heading3"
+                  }
+                },
+                "section_description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Section description",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph"
+                  }
+                },
+                "section_image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Section Image",
+                    "constraint": {
+                      "width": 490
+                    },
+                    "thumbnails": []
+                  }
+                },
+                "image_position": {
+                  "type": "Boolean",
+                  "config": {
+                    "label": "Image position",
+                    "placeholder_false": "Left",
+                    "placeholder_true": "Right",
+                    "default_value": true
+                  }
+                }
+              },
+              "items": {
+                "feature_title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Feature Title",
+                    "placeholder": "Item title",
+                    "allowTargetBlank": true,
+                    "single": "paragraph"
+                  }
+                },
+                "feature_description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Feature Description",
+                    "placeholder": "Item description",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,strong,em,hyperlink,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "feature_icon": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Feature Icon Image",
+                    "constraint": {
+                      "width": 32,
+                      "height": 32
+                    },
+                    "thumbnails": []
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "feature_title": [
+                  {
+                    "type": "paragraph",
+                    "text": "Velit nisi ut nisi esse sint do dolor non.",
+                    "spans": []
+                  }
+                ],
+                "feature_description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Reprehenderit laborum fugiat eiusmod ipsum dolor sint in occaecat et nulla voluptate sit. Id commodo sint ut non officia.",
+                    "spans": []
+                  }
+                ],
+                "feature_icon": {
+                  "dimensions": {
+                    "width": 32,
+                    "height": 32
+                  },
+                  "alt": null,
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea"
+                }
+              }
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading2",
+                  "text": "Heart",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Dolore duis fugiat consequat anim nostrud labore aute minim incididunt cupidatat irure minim labore. Exercitation nulla nostrud fugiat do qui incididunt excepteur labore.",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "features"
+          },
+          "withImage": {
+            "variation": "withImage",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "feature_title": [
+                  {
+                    "type": "paragraph",
+                    "text": "Minim anim aliquip ullamco adipisicing duis ad et Lorem Lorem esse. Ipsum officia Lorem occaecat non esse magna elit exercitation.",
+                    "spans": []
+                  }
+                ],
+                "feature_description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Ut officia esse dolore laboris. Sit laboris irure irure ut ad ea incididunt.",
+                    "spans": []
+                  }
+                ],
+                "feature_icon": {
+                  "dimensions": {
+                    "width": 32,
+                    "height": 32
+                  },
+                  "alt": null,
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1547082299-de196ea013d6"
+                }
+              }
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading2",
+                  "text": "Anyone",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Cupidatat aliquip eiusmod tempor officia consequat quis laborum Lorem tempor proident dolore ullamco sit. Ipsum laboris ad pariatur ullamco pariatur deserunt incididunt ex labore veniam. Ea elit pariatur et pariatur.",
+                  "spans": []
+                }
+              ],
+              "section_title": [
+                {
+                  "type": "heading3",
+                  "text": "History",
+                  "spans": []
+                }
+              ],
+              "section_description": [
+                {
+                  "type": "paragraph",
+                  "text": "Nulla enim et ullamco deserunt in sunt deserunt minim officia magna magna id.",
+                  "spans": []
+                }
+              ],
+              "section_image": {
+                "dimensions": {
+                  "width": 490,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea"
+              },
+              "image_position": true
+            },
+            "slice_type": "features"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/dianka/Documents/POC/poc-playground/.slicemachine/assets/slices/default/Features/default/preview.png",
+            "width": 1280,
+            "height": 800
+          },
+          "withImage": {
+            "path": "/Users/dianka/Documents/POC/poc-playground/slices/default/Features/withImage/preview.png",
+            "width": 1276,
+            "height": 874
+          }
+        }
+      },
+      "hero_banner": {
+        "library": "slices/default",
+        "id": "hero_banner",
+        "name": "HeroBanner",
+        "description": "HeroBanner",
+        "model": {
+          "id": "hero_banner",
+          "type": "SharedSlice",
+          "name": "HeroBanner",
+          "description": "HeroBanner",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "HeroBanner",
+              "primary": {
+                "title_top_line": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title Top line",
+                    "placeholder": "Top line content",
+                    "allowTargetBlank": true,
+                    "single": "heading1"
+                  }
+                },
+                "title_bottom_line": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title Bottom Line",
+                    "placeholder": "Bottom line content",
+                    "allowTargetBlank": true,
+                    "single": "heading1"
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "Section description",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,strong,em,hyperlink"
+                  }
+                },
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image",
+                    "constraint": {
+                      "width": 640,
+                      "height": 554
+                    },
+                    "thumbnails": []
+                  }
+                }
+              },
+              "items": {
+                "cta_label": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Cta Label",
+                    "placeholder": "Link label"
+                  }
+                },
+                "cta_link": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Cta Link",
+                    "placeholder": "Link URL",
+                    "allowTargetBlank": false,
+                    "select": null
+                  }
+                },
+                "cta_type": {
+                  "type": "Select",
+                  "config": {
+                    "label": "Cta Type",
+                    "placeholder": "Select button type",
+                    "options": [
+                      "Primary",
+                      "Secondary"
+                    ],
+                    "default_value": "Primary"
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            },
+            {
+              "id": "withoutCta",
+              "name": "Without Cta",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "HeroBanner",
+              "primary": {
+                "title_top_line": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title Top line",
+                    "placeholder": "Top line content",
+                    "allowTargetBlank": true,
+                    "single": "heading1"
+                  }
+                },
+                "title_bottom_line": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title Bottom Line",
+                    "placeholder": "Bottom line content",
+                    "allowTargetBlank": true,
+                    "single": "heading1"
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "Section description",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,strong,em,hyperlink"
+                  }
+                },
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image",
+                    "constraint": {
+                      "width": 640,
+                      "height": 554
+                    },
+                    "thumbnails": []
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            },
+            {
+              "id": "withSignUpAndMedia",
+              "name": "With sign up and media",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "HeroBanner",
+              "primary": {
+                "form_top_message": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Form top message",
+                    "placeholder": "Short message",
+                    "allowTargetBlank": true,
+                    "single": "paragraph"
+                  }
+                },
+                "title_top_line": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title Top line",
+                    "placeholder": "Top line content",
+                    "allowTargetBlank": true,
+                    "single": "heading1"
+                  }
+                },
+                "title_bottom_line": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title Bottom Line",
+                    "placeholder": "Bottom line content",
+                    "allowTargetBlank": true,
+                    "single": "heading1"
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "Section description",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,strong,em,hyperlink"
+                  }
+                },
+                "form_label": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Form Label",
+                    "placeholder": "Form label, not displayed"
+                  }
+                },
+                "form_placeholder": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Form placeholder",
+                    "placeholder": "Email field placeholder"
+                  }
+                },
+                "form_cta_label": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Form Cta Label",
+                    "placeholder": "Link label"
+                  }
+                },
+                "media_thumbnail": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Media Thumbnail",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "show_play_video_button": {
+                  "type": "Boolean",
+                  "config": {
+                    "label": "Show play video button",
+                    "placeholder_false": "Hide",
+                    "placeholder_true": "Show",
+                    "default_value": true
+                  }
+                },
+                "privacy_message": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Privacy message",
+                    "placeholder": "Privacy message",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item,rtl"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "cta_label": "situation",
+                "cta_link": {
+                  "link_type": "Web",
+                  "url": "http://twitter.com"
+                },
+                "cta_type": "Secondary"
+              }
+            ],
+            "primary": {
+              "title_top_line": [
+                {
+                  "type": "heading1",
+                  "text": "Captain",
+                  "spans": []
+                }
+              ],
+              "title_bottom_line": [
+                {
+                  "type": "heading1",
+                  "text": "Studied",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Sunt nulla officia incididunt cillum quis aliqua ea ipsum sit aliqua laboris consequat sunt. Elit enim laboris magna ex quis proident qui ad. Sit laborum in dolore ex quis dolore esse commodo sint mollit anim nostrud.",
+                  "spans": []
+                }
+              ],
+              "image": {
+                "dimensions": {
+                  "width": 640,
+                  "height": 554
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1587840171670-8b850147754e"
+              }
+            },
+            "slice_type": "hero_banner"
+          },
+          "withoutCta": {
+            "variation": "withoutCta",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "title_top_line": [
+                {
+                  "type": "heading1",
+                  "text": "Clock",
+                  "spans": []
+                }
+              ],
+              "title_bottom_line": [
+                {
+                  "type": "heading1",
+                  "text": "Whatever",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Consequat et consectetur magna laborum occaecat culpa quis. Non ad Lorem voluptate nisi sint irure cillum id consequat fugiat enim esse mollit voluptate.",
+                  "spans": []
+                }
+              ],
+              "image": {
+                "dimensions": {
+                  "width": 640,
+                  "height": 554
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1587840171670-8b850147754e"
+              }
+            },
+            "slice_type": "hero_banner"
+          },
+          "withSignUpAndMedia": {
+            "variation": "withSignUpAndMedia",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "form_top_message": [
+                {
+                  "type": "paragraph",
+                  "text": "Est nulla cupidatat cillum reprehenderit tempor tempor amet aute nisi ea irure. Duis enim esse sint nostrud enim sint cillum est proident nulla.",
+                  "spans": []
+                }
+              ],
+              "title_top_line": [
+                {
+                  "type": "heading1",
+                  "text": "Clothes",
+                  "spans": []
+                }
+              ],
+              "title_bottom_line": [
+                {
+                  "type": "heading1",
+                  "text": "Powder",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Magna sint voluptate officia enim minim. Dolor cillum eu aute eu quis sit magna pariatur ipsum. Excepteur duis minim consequat pariatur occaecat magna quis id ex sunt voluptate consectetur deserunt.",
+                  "spans": []
+                }
+              ],
+              "form_label": "island",
+              "form_placeholder": "sort",
+              "form_cta_label": "lost",
+              "media_thumbnail": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72"
+              },
+              "show_play_video_button": true,
+              "privacy_message": [
+                {
+                  "type": "paragraph",
+                  "text": "Do exercitation aliqua tempor aute enim.",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "hero_banner"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/dianka/Documents/POC/poc-playground/.slicemachine/assets/slices/default/HeroBanner/default/preview.png",
+            "width": 1280,
+            "height": 582
+          },
+          "withoutCta": {
+            "path": "/Users/dianka/Documents/POC/poc-playground/.slicemachine/assets/slices/default/HeroBanner/withoutCta/preview.png",
+            "width": 1280,
+            "height": 548
+          },
+          "withSignUpAndMedia": {
+            "path": "/Users/dianka/Documents/POC/poc-playground/slices/default/HeroBanner/withSignUpAndMedia/preview.png",
+            "width": 1280,
+            "height": 729
+          }
+        }
+      },
+      "menu": {
+        "library": "slices/default",
+        "id": "menu",
+        "name": "MenuItem",
+        "description": "Menu",
+        "model": {
+          "id": "menu",
+          "type": "SharedSlice",
+          "name": "MenuItem",
+          "description": "Menu",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Menu",
+              "primary": {
+                "label": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Label",
+                    "placeholder": "Label",
+                    "allowTargetBlank": true,
+                    "single": "paragraph"
+                  }
+                },
+                "link": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Link",
+                    "placeholder": "Link",
+                    "allowTargetBlank": false,
+                    "select": null
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            },
+            {
+              "id": "dropdown",
+              "name": "Dropdown",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Menu",
+              "primary": {
+                "label": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Dropdown label",
+                    "placeholder": "First level label",
+                    "allowTargetBlank": true,
+                    "single": "paragraph"
+                  }
+                }
+              },
+              "items": {
+                "second_level_link": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Second level link",
+                    "placeholder": "Second level link",
+                    "allowTargetBlank": false,
+                    "select": null
+                  }
+                },
+                "second_level_label": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Second level label",
+                    "placeholder": "Second level label",
+                    "allowTargetBlank": true,
+                    "single": "paragraph"
+                  }
+                },
+                "second_level_description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Second level description",
+                    "placeholder": "Second level description paragraph",
+                    "allowTargetBlank": true,
+                    "single": "paragraph"
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "label": [
+                {
+                  "type": "paragraph",
+                  "text": "Id ut ea fugiat ea do ex in reprehenderit magna ea minim. Aliquip sit duis dolore aute aliqua minim.",
+                  "spans": []
+                }
+              ],
+              "link": {
+                "link_type": "Web",
+                "url": "https://slicemachine.dev"
+              }
+            },
+            "slice_type": "menu"
+          },
+          "dropdown": {
+            "variation": "dropdown",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "second_level_link": {
+                  "link_type": "Web",
+                  "url": "http://google.com"
+                },
+                "second_level_label": [
+                  {
+                    "type": "paragraph",
+                    "text": "Ipsum quis culpa sunt ipsum sunt anim exercitation voluptate amet ea cupidatat amet consectetur tempor. Enim consequat officia consequat magna exercitation consectetur duis. In consectetur aliqua consectetur est qui do laboris sit laborum ex labore dolore veniam deserunt occaecat.",
+                    "spans": []
+                  }
+                ],
+                "second_level_description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Duis consectetur eiusmod quis sit mollit. Esse non in nulla laborum pariatur Lorem do laborum mollit deserunt.",
+                    "spans": []
+                  }
+                ]
+              }
+            ],
+            "primary": {
+              "label": [
+                {
+                  "type": "paragraph",
+                  "text": "Eiusmod excepteur quis eiusmod magna incididunt. Veniam officia officia qui non ullamco dolor sint aliqua aute aute fugiat magna exercitation enim.",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "menu"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/dianka/Documents/POC/poc-playground/slices/default/MenuItem/default/preview.png",
+            "width": 76,
+            "height": 92
+          },
+          "dropdown": {
+            "path": "/Users/dianka/Documents/POC/poc-playground/slices/default/MenuItem/dropdown/preview.png",
+            "width": 448,
+            "height": 283
+          }
+        }
+      },
+      "social_feed_flickr": {
+        "library": "slices/default",
+        "id": "social_feed_flickr",
+        "name": "SocialFeedFlickr",
+        "description": "SocialFeedFlickr",
+        "model": {
+          "id": "social_feed_flickr",
+          "type": "SharedSlice",
+          "name": "SocialFeedFlickr",
+          "description": "SocialFeedFlickr",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "SocialFeedFlickr",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Title",
+                    "allowTargetBlank": true,
+                    "single": "heading2,hyperlink"
+                  }
+                },
+                "social_link_label": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Social Link Label",
+                    "placeholder": "Link label"
+                  }
+                },
+                "social_link_url": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Social Link Url",
+                    "placeholder": "Link URL",
+                    "allowTargetBlank": false,
+                    "select": null
+                  }
+                },
+                "number_of_posts": {
+                  "type": "Number",
+                  "config": {
+                    "label": "Number Of Posts",
+                    "placeholder": "Number Of Posts to display"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading2",
+                  "text": "Excellent",
+                  "spans": []
+                }
+              ],
+              "social_link_label": "can",
+              "social_link_url": {
+                "link_type": "Web",
+                "url": "https://slicemachine.dev"
+              },
+              "number_of_posts": 87
+            },
+            "slice_type": "social_feed_flickr"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/dianka/Documents/POC/poc-playground/slices/default/SocialFeedFlickr/default/preview.png",
+            "width": 1248,
+            "height": 401
+          }
+        }
+      }
+    }
+  },
+  "slices/custom": {
+    "components": {}
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": "social_feed_flickr",
+  "type": "SharedSlice",
+  "name": "SocialFeedFlickr",
+  "description": "SocialFeedFlickr",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "SocialFeedFlickr",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "Title",
+            "allowTargetBlank": true,
+            "single": "heading2,hyperlink"
+          }
+        },
+        "social_link_label": {
+          "type": "Text",
+          "config": {
+            "label": "Social Link Label",
+            "placeholder": "Link label"
+          }
+        },
+        "social_link_url": {
+          "type": "Link",
+          "config": {
+            "label": "Social Link Url",
+            "placeholder": "Link URL",
+            "allowTargetBlank": false,
+            "select": null
+          }
+        },
+        "number_of_posts": {
+          "type": "Number",
+          "config": {
+            "label": "Number Of Posts",
+            "placeholder": "Number Of Posts to display"
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

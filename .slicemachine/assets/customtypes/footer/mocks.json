@@ -1,0 +1,91 @@
+{
+  "internalLinks": {
+    "__TYPE__": "GroupContentType",
+    "value": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "link_label",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Aute enim excepteur et minim pariatur aute nostrud deserunt voluptate dolore laborum aliqua ea minim. Nostrud veniam sint tempor sit duis qui culpa ut amet ex mollit ullamco ea aliqua ut. Ad in officia sint exercitation in occaecat laborum pariatur nisi fugiat."
+                  }
+                }
+              ]
+            }
+          ],
+          [
+            "link",
+            {
+              "__TYPE__": "LinkContent",
+              "value": {
+                "__TYPE__": "ExternalLink",
+                "url": "https://slicemachine.dev"
+              }
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "social_links": {
+    "__TYPE__": "GroupContentType",
+    "value": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "social_link",
+            {
+              "__TYPE__": "LinkContent",
+              "value": {
+                "__TYPE__": "ExternalLink",
+                "url": "http://google.com"
+              }
+            }
+          ],
+          [
+            "social_icon",
+            {
+              "__TYPE__": "ImageContent",
+              "origin": {
+                "id": "main",
+                "url": "https://images.unsplash.com/photo-1471897488648-5eae4ac6686b",
+                "width": 3560,
+                "height": 5340
+              },
+              "url": "https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?rect=0%2C890%2C3560%2C3560&w=24&h=24",
+              "width": 24,
+              "height": 24,
+              "edit": {
+                "zoom": 1,
+                "crop": {
+                  "x": 0,
+                  "y": 890
+                },
+                "background": "transparent"
+              },
+              "thumbnails": {}
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "copyright": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
+      {
+        "type": "paragraph",
+        "content": {
+          "text": "Qui magna quis adipisicing est ullamco. Aute ea anim duis velit sit non sunt laboris est mollit."
+        }
+      }
+    ]
+  }
+}
