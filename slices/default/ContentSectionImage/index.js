@@ -14,7 +14,7 @@ const ContentSectionImage = ({ slice }) => (
         {slice.variation == "default" && (
           <>
             {/* Using PrismicNextImage */}
-            <h2>Using PrismicNextImage</h2>
+            <h2 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl m-2">Using PrismicNextImage</h2>
             <div className="h-full w-full object-cover">
               <PrismicNextImage field={slice.primary.image} />
             </div>
@@ -24,7 +24,7 @@ const ContentSectionImage = ({ slice }) => (
         {slice.variation == "withResponsiveViews" && (
           <>
             {/* Using image responsive views */}
-            <h2>Using Image field responsive views</h2>
+            <h2 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl m-2">Using Image field responsive views</h2>
             <picture>
               {slice.primary.image.mobile ? (
                 <source
